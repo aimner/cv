@@ -166,6 +166,11 @@
 .main__container__right a:hover {
   color: #262729;
 }
+@media (max-width: 650px) {
+  .main__container__right {
+    padding-right: 20px;
+  }
+}
 
 .main__container__section {
   margin-bottom: 30px;
