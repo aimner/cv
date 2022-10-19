@@ -143,6 +143,7 @@
   grid-template-columns: 40px 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  width: 240px;
   padding-bottom: 30px;
 }
 .section__info__list li img,

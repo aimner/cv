@@ -24,6 +24,7 @@
   background-color: #e9d6c5;
   max-width: $widthAvatarBlock;
   padding-top: 30px;
+  
   span {
     font-size: larger;
     font-weight: 600;
@@ -51,7 +52,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 40px 1fr;
     column-gap: 20px;
-    // width: 240px;
+    width: 240px;
     padding-bottom: 30px;
 
     img {
