@@ -1,0 +1,136 @@
+.main {
+  background-color: $whiteColor;
+  span {
+    color: $colorBlack;
+  }
+}
+
+.main__container {
+  @include flex(row, start, start, nowrap);
+
+  h2 {
+    border-bottom: 2px solid $colorBlack;
+    padding: 0 0 5px 0;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 650px) {
+    @include flex(row, center, start, wrap);
+    
+  }
+}
+
+.main__container__left {
+  background-color: #e9d6c5;
+  max-width: $widthAvatarBlock;
+  padding-top: 30px;
+  span {
+    font-size: larger;
+    font-weight: 600;
+  }
+  a {
+    color: rgb(39, 90, 148)
+  }
+  a:hover {
+    color: $hoverLink;
+  }
+  @media (max-width: 650px) {
+    width: 100%;
+    max-width: 100%;
+    
+  }
+}
+
+.section__info__list,
+.section__social__list {
+  padding-inline: 50px;
+
+
+  li {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40px 1fr;
+    column-gap: 20px;
+    // width: 240px;
+    padding-bottom: 30px;
+
+    img {
+      grid-column: 1 / 1;
+      grid-row: 1/ -1;
+    }
+  }
+}
+
+.main__container__right {
+  padding-left: 20px;
+  padding-top: 30px;
+
+  section {
+    border-left: 2px solid black;
+    padding-left: 20px;
+  }
+  a {
+    color: $brownColor;
+  }
+  a:hover {
+    color: $colorBlack
+  }
+}
+
+.main__container__section {
+  margin-bottom: 30px;
+}
+
+.summary {
+  p {
+    padding-top: 5px;
+    font-size: large;
+    text-align: left;
+  }
+}
+
+.education__list__item {
+  @include flex(row, start, start, nowrap);
+  column-gap: 20px;
+  padding-bottom: 5px;
+
+  b {
+    display: inline-block;
+    width: 82px;
+  }
+}
+
+.skills__list {
+    @include flex(row, start, start, wrap);
+    column-gap: 20px;
+}
+
+.skills__list__item {
+    
+    h3 {
+        padding-bottom: 5px
+    }
+    .skill__list__images {
+        @include flex(row, start, start, nowrap);
+        padding-bottom: 10px;
+    }
+}
+
+.projects__list__item {
+    a {
+        font-size: larger;
+        padding-bottom: 5px
+    };
+    .technologies {
+        padding-bottom: 5px;
+    }
+}
+
+.technologies__list {
+    @include flex(row, start, start, nowrap);
+    padding-bottom: 10px;
+}
+
+.english {
+    margin-bottom: 30px;
+}

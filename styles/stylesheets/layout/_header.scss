@@ -1,0 +1,49 @@
+.header {
+  background-color: $greyColor;
+}
+.header__container {
+  @include flex(row, start, center, wrap);
+  column-gap: 250px;
+  .header__container-img {
+    max-width: $widthAvatarBlock;
+    padding-block: 50px;
+    background-color: $softBrownColor;
+    padding-inline: 45px;
+    @include flex(row, center, center, wrap);
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid $greyColor;
+      @media (max-width: 1080px) {
+        border-color: $softBrownColor;
+    }
+    }
+    @media (max-width: 1080px) {
+        background-color: inherit;
+        padding-inline: 0;
+    }
+    @media (max-width: 375) {
+        background-color: inherit;
+    }
+  }
+  .header__container-title {
+    color: $softBrownColor;
+    h1 {
+        font-weight: 700;
+        font-size: 55px;
+        text-align: center;
+    }
+    p {
+        @media (max-width: 395px) {
+            text-align: center;
+            
+        }
+    }
+  }
+  @media (max-width: 1080px) {
+    @include flex(row, center, center, wrap);
+    padding-bottom: 30px;
+}
+}

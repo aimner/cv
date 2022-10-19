@@ -1,0 +1,28 @@
+@import "./stylesheets/abstracts/variables";
+@import "./stylesheets/abstracts/mixins";
+
+//////////////////////////////////////
+@import "./stylesheets/layout/container";
+@import "./stylesheets/layout/header";
+@import "./stylesheets/layout/main";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  width: $iconWidth;
+  height: $iconHeight;
+}
