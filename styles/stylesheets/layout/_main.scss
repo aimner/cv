@@ -126,10 +126,10 @@
 }
 .projects__list {
   @include flex(row, start, start, wrap);
-  // row-gap: 10px;
   column-gap: 25px;
 }
 .projects__list__item {
+  width: 200px;
     a {
         font-size: larger;
         padding-bottom: 5px

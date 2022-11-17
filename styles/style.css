@@ -231,6 +231,9 @@
        column-gap: 25px;
 }
 
+.projects__list__item {
+  width: 200px;
+}
 .projects__list__item a {
   font-size: larger;
   padding-bottom: 5px;
