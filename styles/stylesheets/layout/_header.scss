@@ -1,9 +1,9 @@
 .header {
-  background-color: $greyColor;
+  background: $greyColor;
 }
 .header__container {
   @include flex(row, start, center, wrap);
-  column-gap: 250px;
+  column-gap: 225px;
   .header__container-img {
     max-width: $widthAvatarBlock;
     padding-block: 50px;
