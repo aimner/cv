@@ -104,7 +104,9 @@
   b {
     display: inline-block;
     width: 82px;
+    flex-shrink: 0;
   }
+
 }
 
 .skills__list {
