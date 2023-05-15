@@ -213,11 +213,20 @@
 }
 .skills__list__item .skill__list__images {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   align-items: start;
   flex-wrap: nowrap;
   padding-bottom: 10px;
+}
+.skills__list__item .skill__list__images__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: medium;
+  font-weight: 500;
 }
 
 .projects__list {
@@ -252,6 +261,34 @@
 
 .english {
   margin-bottom: 30px;
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.experience__list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(153, 146, 146);
+  margin-bottom: 5px;
+}
+.experience__list__item__title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.experience__list__item__title a {
+  width: 130px;
+}
+.experience__list__item p {
+  max-width: 520px;
 }
 
 * {

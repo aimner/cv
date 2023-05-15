@@ -16,16 +16,15 @@
 
   @media (max-width: 650px) {
     @include flex(row, center, start, wrap);
-    
   }
 }
 
 .main__container__left {
-  background: linear-gradient(146deg, rgba(233,214,197,1) 44%, rgba(223,204,187,1) 40%);
+  background: linear-gradient(146deg, rgba(233, 214, 197, 1) 44%, rgba(223, 204, 187, 1) 40%);
   max-width: $widthAvatarBlock;
   padding-top: 30px;
-  // height: 100vh;
-  
+
+
   span {
     font-size: larger;
     font-weight: 600;
@@ -39,14 +38,12 @@
   @media (max-width: 650px) {
     width: 100%;
     max-width: 100%;
-    
   }
 }
 
 .section__info__list,
 .section__social__list {
   padding-inline: 50px;
-
 
   li {
     display: grid;
@@ -76,11 +73,10 @@
     color: $brownColor;
   }
   a:hover {
-    color: $colorBlack
+    color: $colorBlack;
   }
   @media (max-width: 650px) {
     padding-right: 20px;
-    
   }
 }
 
@@ -91,7 +87,7 @@
 .summary {
   p {
     padding-top: 5px;
-    // font-size: large;
+
     text-align: left;
   }
 }
@@ -106,23 +102,26 @@
     width: 82px;
     flex-shrink: 0;
   }
-
 }
 
 .skills__list {
-    @include flex(row, start, start, wrap);
-    column-gap: 20px;
+  @include flex(row, start, start, wrap);
+  column-gap: 20px;
 }
 
 .skills__list__item {
-    
-    h3 {
-        padding-bottom: 5px
+  h3 {
+    padding-bottom: 5px;
+  }
+  .skill__list__images {
+    @include flex(column, start, start, nowrap);
+    padding-bottom: 10px;
+    &__item {
+      @include flex(row, start, center, nowrap);
+      font-size: medium;
+      font-weight: 500;
     }
-    .skill__list__images {
-        @include flex(row, start, start, nowrap);
-        padding-bottom: 10px;
-    }
+  }
 }
 .projects__list {
   @include flex(row, start, start, wrap);
@@ -130,20 +129,54 @@
 }
 .projects__list__item {
   width: 200px;
-    a {
-        font-size: larger;
-        padding-bottom: 5px
-    };
-    .technologies {
-        padding-bottom: 5px;
-    }
+  a {
+    font-size: larger;
+    padding-bottom: 5px;
+  }
+  .technologies {
+    padding-bottom: 5px;
+  }
 }
 
 .technologies__list {
-    @include flex(row, start, start, nowrap);
-    padding-bottom: 10px;
+  @include flex(row, start, start, nowrap);
+  padding-bottom: 10px;
 }
 
 .english {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.experience {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  gap: 15px;
+
+  }
+
+  &__list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(153, 146, 146);
+    margin-bottom: 5px;
+    &__title {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      a {
+        width: 130px;
+      }
+     
+    }
+    p {
+
+      max-width: 520px;
+    }
+  }
 }
