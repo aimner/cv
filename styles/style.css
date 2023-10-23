@@ -259,10 +259,6 @@
   padding-bottom: 10px;
 }
 
-.english {
-  margin-bottom: 30px;
-}
-
 .experience__list {
   display: flex;
   flex-direction: column;
@@ -281,11 +277,15 @@
 .experience__list__item__title {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
+  width: 192px;
 }
-.experience__list__item__title a {
+.experience__list__item__title a, .experience__list__item__title span {
   width: 130px;
+}
+.experience__list__item__title b {
+  width: 61px;
 }
 .experience__list__item p {
   max-width: 520px;

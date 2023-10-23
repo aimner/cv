@@ -24,7 +24,6 @@
   max-width: $widthAvatarBlock;
   padding-top: 30px;
 
-
   span {
     font-size: larger;
     font-weight: 600;
@@ -143,16 +142,11 @@
   padding-bottom: 10px;
 }
 
-.english {
-  margin-bottom: 30px;
-}
-
 .experience {
   &__list {
     display: flex;
     flex-direction: column;
-  gap: 15px;
-
+    gap: 15px;
   }
 
   &__list__item {
@@ -167,15 +161,17 @@
     &__title {
       display: flex;
       flex-direction: row;
-      gap: 10px;
+      gap: 15px;
       align-items: center;
-      a {
+      width: 192px;
+      a, span {
         width: 130px;
       }
-     
+      b {
+        width: 61px;
+      }
     }
     p {
-
       max-width: 520px;
     }
   }
