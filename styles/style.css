@@ -262,7 +262,7 @@
 .experience__list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 .experience__list__item {
   display: flex;
